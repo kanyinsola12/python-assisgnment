@@ -1,0 +1,28 @@
+# file_handling_assignment.py
+
+# Step 1: File Creation
+# Creates a new text file and writes three lines of text
+with open('my_file.txt', 'w') as file:
+    file.write("This is line 1\n")
+    file.write("12345\n")
+    file.write("Hello, this is line 3\n")
+
+# Step 2: File Reading and Display
+# Reads the contents of the file and displays them
+with open('my_file.txt', 'r') as file:
+    contents = file.read()
+    print("Contents of my_file.txt:")
+    print(contents)
+
+# Step 3: File Appending
+# Appends three additional lines to the file
+with open('my_file.txt', 'a') as file:
+    file.write("Appending line 4\n")
+    file.write("67890\n")
+    file.write("Appending line 6\n")
+
+# Reads the updated contents of the file and displays them again
+with open('my_file.txt', 'r') as file:
+    contents = file.read()
+    print("Updated contents of my_file.txt:")
+    print(contents)
